@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDA Flow | Automatización de Prior Notices</title>
+    <title>PriorLogic | Automatización de Prior Notices FDA</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
@@ -13,6 +13,7 @@
         <div class="logo">Prior<span>Logic</span></div>
         <div class="nav-links">
             <a href="#features">Beneficios</a>
+            <a href="#how-it-works">Proceso</a>
             <a href="#pricing">Planes</a>
         </div>
         <a href="#contact" class="btn-sm">Descargar Software</a>
@@ -20,13 +21,13 @@
 
     <header class="hero">
         <div class="hero-container">
-            <span class="badge">Nuevo — Integración con Google Sheet y Excel</span>
+            <span class="badge">Nuevo — Integración con Google Sheets y Excel</span>
             <h1>La forma más inteligente de crear <span>Prior Notices.</span></h1>
             <p>Software de escritorio que automatiza el cumplimiento con la FDA. Reduce el tiempo de registro en un 90% y elimina los errores manuales de raíz.</p>
             
             <div class="hero-actions">
                 <a href="#pricing" class="btn-primary">Empezar ahora</a>
-                <a href="#features" class="btn-secondary">Explorar funciones ↓</a>
+                <a href="#how-it-works" class="btn-secondary">Explorar funciones ↓</a>
             </div>
             
             <div class="hero-stats">
@@ -37,9 +38,6 @@
         </div>
     </header>
 
-
-
-
     <section id="how-it-works" class="process">
         <div class="section-header">
             <span class="tag">Simplicidad</span>
@@ -49,11 +47,11 @@
             <div class="step">
                 <div class="number">01</div>
                 <h3>Carga de Datos</h3>
-                <p>Arrastra tu archivo Excel. El sistema mapea automáticamente SKU, pesos y códigos arancelarios.</p>
+                <p>Arrastra tu archivo Excel o vincula tu Google Sheet. El sistema mapea automáticamente SKU, pesos y códigos.</p>
             </div>
             <div class="step">
                 <div class="number">02</div>
-                <h3>Validación</h3>
+                <h3>Validación AI</h3>
                 <p>PriorLogic verifica en milisegundos que no falten datos obligatorios según las reglas del sistema PNSI.</p>
             </div>
             <div class="step">
@@ -64,12 +62,60 @@
         </div>
     </section>
 
+    <section id="features" class="features-detailed">
+        <div class="container">
+            <div class="features-header">
+                <span class="badge-alt">Potencia Técnica</span>
+                <h2>Diseñado para el flujo logístico moderno</h2>
+                <p>PriorLogic es un motor de automatización completo para tu departamento de exportación.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="f-card">
+                    <div class="f-icon">📊</div>
+                    <h3>Motor de Importación</h3>
+                    <p>Mapeo inteligente de columnas. PriorLogic reconoce los campos de producto, cantidad y códigos automáticamente de cualquier fuente.</p>
+                </div>
+
+                <div class="f-card">
+                    <div class="f-icon">🔍</div>
+                    <h3>Validación Pre-Envío</h3>
+                    <p>Nuestro algoritmo detecta registros vencidos o códigos incorrectos antes de que lleguen a la FDA, evitando rechazos.</p>
+                </div>
+
+                <div class="f-card">
+                    <div class="f-icon">🤖</div>
+                    <h3>Relleno Automatizado</h3>
+                    <p>El software interactúa con el portal PNSI, completando cada campo por ti a una velocidad imposible para un humano.</p>
+                </div>
+
+                <div class="f-card">
+                    <div class="f-icon">✉️</div>
+                    <h3>Alertas Inteligentes</h3>
+                    <p>Sistema de notificaciones que te informa al instante cuando un Prior Notice es aceptado o requiere revisión.</p>
+                </div>
+
+                <div class="f-card">
+                    <div class="f-icon">📁</div>
+                    <h3>Historial Local</h3>
+                    <p>Base de datos con tus registros históricos para duplicar envíos frecuentes en un solo clic. Sin re-tipear datos.</p>
+                </div>
+
+                <div class="f-card">
+                    <div class="f-icon">🔐</div>
+                    <h3>Cifrado Militar</h3>
+                    <p>Toda tu información se guarda con encriptación AES-256 en tu propio hardware. Privacidad total garantizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="security-strip">
         <div class="security-content">
             <div class="icon-shield">🛡️</div>
             <div class="text">
                 <h3>Tus credenciales nunca tocan la nube</h3>
-                <p>A diferencia de otras apps, PriorLogic es un software de escritorio. Tus contraseñas de la FDA y datos de clientes se cifran y guardan únicamente en tu computadora local.</p>
+                <p>A diferencia de otras apps, PriorLogic es software de escritorio. Tus contraseñas de la FDA y datos comerciales se quedan en tu empresa.</p>
             </div>
         </div>
     </section>
@@ -86,8 +132,9 @@
                 <ul class="features-list">
                     <li>Hasta 50 Prior Notices</li>
                     <li>Soporte por email</li>
+                    <li>Actualizaciones de ley</li>
                 </ul>
-                <a href="#" class="btn-outline">Comenzar</a>
+                <a href="#contact" class="btn-outline">Comenzar</a>
             </div>
             <div class="price-card featured">
                 <div class="best-value">Más Popular</div>
@@ -96,69 +143,48 @@
                 <ul class="features-list">
                     <li>Prior Notices <b>ilimitados</b></li>
                     <li>Soporte <b>Priority</b></li>
+                    <li>Integración Excel/Sheets</li>
                     <li>Alertas por Email</li>
                 </ul>
-                <a href="#" class="btn-primary">Elegir Business</a>
+                <a href="#contact" class="btn-primary">Elegir Business</a>
             </div>
         </div>
     </section>
-
-
 
     <section id="reviews" class="reviews-section">
         <div class="section-header">
             <span class="tag">Testimonios</span>
             <h2>Exportadores que ya optimizaron su tiempo</h2>
-            <p>Empresas de logística y alimentos que confían en PriorLogic cada día.</p>
         </div>
-
         <div class="reviews-grid">
             <div class="review-card">
-                <div class="review-content">
-                    <p>"Pasamos de dedicar 4 horas diarias a los Prior Notices a resolverlo todo en menos de 15 minutos. La integración con Excel es impecable."</p>
-                </div>
+                <div class="review-content"><p>"Pasamos de dedicar 4 horas diarias a los Prior Notices a resolverlo todo en menos de 15 minutos."</p></div>
                 <div class="review-author">
                     <div class="author-avatar blue">JP</div>
-                    <div class="author-info">
-                        <strong>Juan Pérez</strong>
-                        <span>Director de Logística, FrutEx S.A.</span>
-                    </div>
+                    <div class="author-info"><strong>Juan Pérez</strong><span>Logística, FrutEx S.A.</span></div>
                 </div>
             </div>
-
             <div class="review-card">
-                <div class="review-content">
-                    <p>"Lo que más valoramos es la seguridad. Al ser un software de escritorio, nos da la tranquilidad de que nuestros datos comerciales están protegidos."</p>
-                </div>
+                <div class="review-content"><p>"Al ser un software de escritorio, nos da la tranquilidad de que nuestros datos están protegidos."</p></div>
                 <div class="review-author">
                     <div class="author-avatar green">MG</div>
-                    <div class="author-info">
-                        <strong>Maria García</strong>
-                        <span>Gerente de Exportaciones, SeaFood Int.</span>
-                    </div>
+                    <div class="author-info"><strong>Maria García</strong><span>Exportaciones, SeaFood Int.</span></div>
                 </div>
             </div>
-
             <div class="review-card">
-                <div class="review-content">
-                    <p>"El sistema de validación nos ha ahorrado miles de dólares en multas por errores de dedo. Es una herramienta obligatoria para el sector."</p>
-                </div>
+                <div class="review-content"><p>"La validación automática nos ha ahorrado miles de dólares en multas por errores de dedo."</p></div>
                 <div class="review-author">
                     <div class="author-avatar purple">RC</div>
-                    <div class="author-info">
-                        <strong>Ricardo Castro</strong>
-                        <span>Operaciones, Global Cargo Ltd.</span>
-                    </div>
+                    <div class="author-info"><strong>Ricardo Castro</strong><span>Global Cargo Ltd.</span></div>
                 </div>
             </div>
         </div>
     </section>
 
-
     <footer id="contact" class="main-footer">
         <div class="footer-cta">
             <h2>¿Listo para optimizar tu logística?</h2>
-            <p>Únete a las empresas que ya ahorran 20+ horas semanales en trámites aduaneros.</p>
+            <p>Déjanos tu correo para enviarte una licencia de prueba de 14 días.</p>
             <form class="footer-form">
                 <input type="email" placeholder="Correo corporativo" required>
                 <button type="submit">Solicitar Demo</button>
@@ -166,10 +192,9 @@
         </div>
         <div class="footer-bottom">
             <div class="logo-small">Prior<span>Logic</span></div>
-            <p>&copy; 2026 Automatización Aduanera Profesional.</p>
+            <p>&copy; 2026 PriorLogic Automation. Hecho para exportadores.</p>
         </div>
     </footer>
 
-
-    </body>
+</body>
 </html>

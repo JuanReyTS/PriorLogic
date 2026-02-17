@@ -439,3 +439,153 @@ h1 span {
 @media (max-width: 768px) {
     .reviews-section { padding: 60px 5%; }
 }
+
+
+
+
+/* --- SECCIÓN FUNCIONES DETALLADAS --- */
+.features-detailed {
+    padding: 120px 8%;
+    background-color: #f9f9fb;
+}
+
+.features-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px;
+}
+
+.badge-alt {
+    color: var(--primary);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.features-header h2 {
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.f-card {
+    background: var(--white);
+    padding: 45px;
+    border-radius: 28px;
+    border: 1px solid rgba(0,0,0,0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.f-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+    border-color: rgba(0, 113, 227, 0.2);
+}
+
+.f-icon {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.f-card h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.f-card p {
+    color: var(--grey);
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Efecto sutil de gradiente al fondo de la tarjeta al hacer hover */
+.f-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.f-card:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .features-header h2 { font-size: 2rem; }
+    .f-card { padding: 30px; }
+}
+
+
+
+
+/* 1. HERO - Fondo Blanco/Gradiente */
+.hero {
+    background: radial-gradient(circle at center, #ffffff 0%, #f9f9fb 100%);
+}
+
+/* 2. PROCESO - Fondo Gris Claro */
+.process {
+    background-color: #f5f5f7; /* Gris claro */
+    padding: 100px 8%;
+}
+
+/* 3. FUNCIONES - Fondo Blanco */
+.features-detailed {
+    background-color: #ffffff; /* Blanco */
+    padding: 120px 8%;
+}
+
+/* Las tarjetas dentro de funciones deben ser grises ahora para contrastar */
+.f-card {
+    background: #f9f9fb; 
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+/* 4. SEGURIDAD - Se mantiene Oscuro (Ya lo tienes) */
+.security-strip {
+    background: #1d1d1f;
+    color: white;
+}
+
+/* 5. PRECIOS - Fondo Blanco */
+.pricing-section {
+    background-color: #ffffff;
+    padding: 120px 8%;
+}
+
+/* 6. REVIEWS - Fondo Gris Claro */
+.reviews-section {
+    background-color: #f5f5f7;
+    padding: 100px 8%;
+}
+
+/* Las tarjetas de reviews pasan a ser blancas para resaltar sobre el fondo gris */
+.review-card {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* 7. FOOTER - Fondo Blanco o Gris muy claro */
+.main-footer {
+    background-color: #ffffff;
+}
