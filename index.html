@@ -13,7 +13,6 @@
         <div class="logo">Prior<span>Logic</span></div>
         <div class="nav-links">
             <a href="#features">Beneficios</a>
-            <a href="#how-it-works">Proceso</a>
             <a href="#pricing">Planes</a>
         </div>
         <a href="#contact" class="btn-sm">Descargar Software</a>
@@ -27,7 +26,7 @@
         
         <div class="hero-actions">
             <a href="#pricing" class="btn-primary">Empezar ahora</a>
-            <a href="#how-it-works" class="btn-secondary">Explorar funciones ↓</a>
+            <a href="#features" class="btn-secondary">Explorar funciones ↓</a>
         </div>
         
         <div class="hero-stats">
@@ -191,20 +190,44 @@
         </div>
     </section>
 
-    <footer id="contact" class="main-footer">
-        <div class="footer-cta">
-            <h2>¿Listo para optimizar tu logística?</h2>
-            <p>Déjanos tu correo para enviarte una licencia de prueba de 14 días.</p>
-            <form class="footer-form">
-                <input type="email" placeholder="Correo corporativo" required>
-                <button type="submit">Solicitar Demo</button>
-            </form>
-        </div>
-        <div class="footer-bottom">
-            <div class="logo-small">Prior<span>Logic</span></div>
-            <p>&copy; 2026 PriorLogic Automation. Hecho para exportadores.</p>
-        </div>
-    </footer>
+<footer id="contact" class="main-footer">
+    <div class="footer-cta">
+        <h2>¿Listo para optimizar tu logística?</h2>
+        <p>Déjanos tu correo para enviarte una licencia de prueba de 14 días.</p>
+        
+        <form action="https://formspree.io/f/xvzbqpwg" method="POST" class="footer-form">
+            <input type="hidden" name="_next" value="https://juanreyts.github.io/priorlogic">
+            <input type="hidden" name="_subject" value="🔥 PriorLogic: Nuevo Lead de Demo">
+            <input type="hidden" name="_language" value="es">
+            
+            <input type="email" name="email" placeholder="Correo corporativo" required>
+            
+            <input type="text" name="_gotcha" style="display:none">
+            <button type="submit">Solicitar Demo</button>
+        </form>
+
+        <div id="form-status" style="margin-top: 15px; font-weight: 600; display: none;"></div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="logo-small">Prior<span>Logic</span></div>
+        <p>&copy; 2026 PriorLogic Automation. Hecho para exportadores.</p>
+    </div>
+</footer>
+
+<script>
+    const form = document.getElementById('demo-form');
+    const btn = document.getElementById('submit-btn');
+    const status = document.getElementById('form-status');
+
+    form.addEventListener('submit', function() {
+        btn.innerText = 'Enviando...';
+        btn.style.opacity = '0.7';
+        btn.style.pointerEvents = 'none';
+        
+        // El formulario seguirá su curso hacia Formspree normalmente
+    });
+</script>
 
 </body>
 </html>
